@@ -1,0 +1,40 @@
+block-exp := number
+
+          := (number symbol block-exp)
+
+          := (symbol block-exp block-exp)
+
+          := symbol
+  //Question 1        
+(
+(define-Var-exp a 1)
+(define-Var-exp b 3)
+(define-Var-exp c 5)
+(define-Var-exp d 7)
+(define-Var-exp e 9)
+(define-Var-exp f 11)
+(define-Var-exp g 13)
+(define-Var-exp h (do-mathy-stuff + d e)
+(Print (var-exp a))
+(Print (var-exp b))
+(Print (var-exp c))
+(Print (var-exp d))
+(Print (var-exp e))
+(Print (var-exp f))
+(Print (var-exp g))
+(Print (var-exp h))
+)
+       
+       //Question 2
+       
+      (define count-block-exp
+       {sum block-exp
+       if (empty? block-exp)
+      0
+      (+ (car block-exp) (sum (cdr block-exp)))))
+      (sum (block-exp))
+                  
+                  
+       //Question 3
+       
+                  
